@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* 🛠️ Added to prevent padding from breaking alignments */
+}
+
+.card-container {
+    background-color: rgb(184, 176, 189);
+    display: flex;
+    flex-direction: column; /* 🛠️ Stacks cards on mobile screens by default */
+    gap: 1rem;
+}
+
+.click-btn {
+    text-transform: capitalize;
+    padding: 2px;
+    width: 80px;
+    background-color: rgb(189, 47, 47);
+    color: aliceblue;
+}
+
+.card {
+     background-color: bisque;
+     text-align: center;
+     margin: 1rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border-radius: 10px;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 🛠️ Fixed invalid box-shadow syntax */
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    object-fit: cover; /* 🛠️ Keeps images from stretching out of proportion */
+}
+
+.btn {
+    background-color: rgb(233, 79, 79);
+    color: blanchedalmond;
+    border: 1px solid rgb(174, 162, 162);
+    border-radius: 3px;
+    box-shadow: 0px 3px 3px 0px rgb(90, 85, 85);
+    text-decoration: none;
+    width: 100px;
+    margin: 0 0 1rem 0;
+}
+
+
+@media screen and (min-width: 728px) {
+   .card-container {
+        background-color: rgb(184, 176, 189);
+        display: flex; /* 🛠️ Fixed invalid value: 'flexbox' is not a valid CSS property value */
+        flex-direction: row;
+        flex-wrap: wrap;
+   }
+}
+
+
+
+.usestatecontainer {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: aquamarine;
+    padding: 1.5rem;
+    margin: auto;
+    width: max-content;
+    border-radius: 8px;
+}
+
+
+.usestatecontainer button {
+    display: inline-block; 
+    background-color: rgb(11, 81, 57);
+    color: aliceblue;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.usestatecontainer button:hover {
+    background-color: rgb(17, 122, 86); /* Makes the green a bit lighter on hover */
+    transform: scale(1.05);             /* Slightly grows the button for better feedback */
+}
+

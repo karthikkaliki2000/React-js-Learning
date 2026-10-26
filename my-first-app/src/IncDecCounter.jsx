@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 
 
-const UseStatePracticeOne = () => {
+const IncDecCounter = () => {
 
     const [count,setCount]=useState(0);
 
-
+  
   return (
     <div className='usestatecontainer'>
          <button onClick={()=>setCount(count-1)}>-</button>
@@ -15,4 +15,4 @@ const UseStatePracticeOne = () => {
   )
 }
 
-export default UseStatePracticeOne
+export default IncDecCounter

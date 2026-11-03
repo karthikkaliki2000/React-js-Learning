@@ -12,6 +12,11 @@ import UseEffectPracticeThree from './UseEffectPracticeThree'
 import UseEffectPracticeFour from './UseEffectPracticeFour'
 import UseContext from './UseContext'
 import UseReducerExampleOne from './UseReducerExampleOne'
+import UseReducerExampleTwo from './UseReducerExampleTwo'
+import UseRefExampleOne from './UseRefExampleOne'
+import UseRefExampleTwo from './UseRefExampleTwo'
+import UseMemoExample from './UseMemoExample'
+
 const App = () => {
   return (
     <>
@@ -26,8 +31,21 @@ const App = () => {
     <UseEffectPracticeTwo/>
     <UseEffectPracticeThree/>
     <UseEffectPracticeFour />
+
+
     <UseContext />
+
+
     <UseReducerExampleOne/>
+    <UseReducerExampleTwo />
+
+    <UseRefExampleOne />
+    <UseRefExampleTwo />
+
+
+    <UseMemoExample />
+
+
     <ClickEvent />
     <CardContainer />
     </>
